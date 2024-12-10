@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_toStartOf="@+id/header_title"
+        android:contentDescription="@string/quotes_icon"
         android:src="@drawable/ic_quote" />
 
     <Button

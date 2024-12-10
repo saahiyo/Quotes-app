@@ -3,4 +3,5 @@
     <string name="this_is_a_sample_quote">This is a sample quote</string>
     <string name="quotes">Quotes</string>
     <string name="dots">......</string>
+    <string name="quotes_icon">quotes icon</string>
 </resources>
