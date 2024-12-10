@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,11 +18,27 @@
         android:textColor="?attr/colorPrimary"
         android:textSize="28sp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/header_title"
+        android:src="@drawable/ic_quote" />
+
+    <Button
+        android:id="@+id/theme_button"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:icon="@drawable/ic_moon" />
+
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/header_title"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content"/>
+        android:layout_marginTop="20dp" />
+
     <TextView
         android:id="@+id/quote_tv"
         android:layout_width="wrap_content"
@@ -28,8 +46,8 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
-        android:textAlignment="center"
         android:text="@string/dots"
+        android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold"
         tools:text="@string/this_is_a_sample_quote" />
@@ -53,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-light"
         android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-light"
         android:text="Next" />
 
     <ProgressBar
@@ -65,6 +83,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:visibility="gone" />
-
 
 </RelativeLayout>
